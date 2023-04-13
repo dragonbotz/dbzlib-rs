@@ -10,7 +10,7 @@ In order to properly use this library, you need to set the path to it in your `C
 ```toml
 # In Cargo.toml
 # Add the following:
-[dependency.dbzlib-rs]
+[dependencies.dbzlib-rs]
 path = "path/to/dbzlib-rs"
 ```
 
