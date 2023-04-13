@@ -6,9 +6,15 @@ The main purpose of this library is to ease the backend development of Dragon Bo
 It's intended to be easy to use, easy to understand and well documented.
 
 # Usage
-## Import
-To facilitate the use of this library, this is the import pattern we recommend:
+In order to properly use this library, you need to set the path to it in your `Cargo.toml` file, like this:
+```toml
+# In Cargo.toml
+# Add the following:
+[dependency.dbzlib-rs]
+path = "path/to/dbzlib-rs"
+```
+
+Then, add the following lines to your code to import what you want. In the following example, we import the Character model:
 ```rust
-// importing the Character model
-use dbzlib_rs::model::Character;
+use dbzlib_rs::model::character::Character;
 ```
