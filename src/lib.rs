@@ -1,14 +1,7 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+//! Entry point of Dragon Bot Z lib.
+//!
+//! This library is the Rust implementation of Dragon Bot Z library. Its main
+//! purpose is to ease the backend development of Dragon Bot Z.
+//!
+//! Authors: Lahcène Belhadi <lahcene.belhadi@gmail.com>
+pub mod model;
