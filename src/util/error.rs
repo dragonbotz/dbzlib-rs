@@ -1,6 +1,6 @@
 //! Error handling module
 //!
-//! This module contains implementations about error handling for Dragon Bot Z
+//! In Dragon Bot Z, an Error is a non-recoverable error, you should panic.
 //!
 //! Authors: Lahcène Belhadi <lahcene.belhadi@gmail.com>
 
