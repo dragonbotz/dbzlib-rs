@@ -13,12 +13,14 @@ pub type ExcResult<T> = std::result::Result<T, Exception>;
 /// Recoverable errors
 pub enum Exception {
     InsertNewCharacter(String),
+    RetrieveCharacter(String),
 }
 
 impl fmt::Display for Exception {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         let content = match &self {
             Exception::InsertNewCharacter(error) => format!("[Exception][Insert New Character] An error occured while trying to add a new character to the database: {error}"),
+            Exception::RetrieveCharacter(error) => format!("[Exception][Retrieve Character] An error occured while trying to retrieve a character from the database: {error}"),
         };
 
         write!(f, "{}", content)
