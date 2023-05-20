@@ -14,3 +14,20 @@ pub struct Character {
     name: String,
     image_url: String,
 }
+
+impl Character {
+    /// Returns a reference to Character's id
+    pub fn id(&self) -> &Option<i64> {
+        &self.id
+    }
+
+    /// Returns a reference to Character's name
+    pub fn name(&self) -> &String {
+        &self.name
+    }
+
+    /// Returns a reference to Character's image url
+    pub fn image_url(&self) -> &String {
+        &self.image_url
+    }
+}
