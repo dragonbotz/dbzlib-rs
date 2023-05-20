@@ -15,6 +15,7 @@ pub type ExcResult<T> = std::result::Result<T, Exception>;
 pub enum Exception {
     InsertNewCharacter(String),
     RetrieveCharacter(String),
+    RetrieveMultipleCharacters(String),
 }
 
 impl fmt::Display for Exception {
@@ -22,6 +23,7 @@ impl fmt::Display for Exception {
         let content = match &self {
             Exception::InsertNewCharacter(error) => format!("[Exception][Insert New Character] An error occured while trying to add a new character to the database: {error}"),
             Exception::RetrieveCharacter(error) => format!("[Exception][Retrieve Character] An error occured while trying to retrieve a character from the database: {error}"),
+            Exception::RetrieveMultipleCharacters(error) => format!("[Exception][Retrieve Multiple Characters] An error occured while trying to retrieve multiple characters from database: {error}"),
         };
 
         write!(f, "{}", content)
