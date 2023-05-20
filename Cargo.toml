@@ -10,3 +10,9 @@ authors = ["Lahcène Belhadi <lahcene.belhadi@gmail.com>"]
 [dependencies.serde]
 version = "1.0"
 features = ["derive"]
+
+# Row deserialization
+# https://crates.io/crates/sqlx
+[dependencies.sqlx]
+version = "0.6"
+features = ["runtime-tokio-native-tls", "postgres"]

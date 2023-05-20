@@ -5,3 +5,4 @@
 //!
 //! Authors: Lahcène Belhadi <lahcene.belhadi@gmail.com>
 pub mod model;
+pub mod util;
