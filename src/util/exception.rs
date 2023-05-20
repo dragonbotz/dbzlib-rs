@@ -7,6 +7,9 @@
 
 use core::fmt;
 
+// Custom Result type containing an exception
+pub type ExcResult<T> = std::result::Result<T, Exception>;
+
 /// Recoverable errors
 pub enum Exception {
     InsertNewCharacter(String),

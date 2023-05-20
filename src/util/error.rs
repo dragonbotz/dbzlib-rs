@@ -6,8 +6,8 @@
 
 use core::fmt;
 
-// Custom Result type
-pub type Result<T> = std::result::Result<T, Error>;
+// Custom Result type containing an error
+pub type ErrResult<T> = std::result::Result<T, Error>;
 
 /// Not recoverable errors
 #[derive(Debug)]
