@@ -11,6 +11,7 @@ use core::fmt;
 pub type ExcResult<T> = std::result::Result<T, Exception>;
 
 /// Recoverable errors
+#[derive(Debug)]
 pub enum Exception {
     InsertNewCharacter(String),
     RetrieveCharacter(String),
