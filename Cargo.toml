@@ -16,3 +16,9 @@ features = ["derive"]
 [dependencies.sqlx]
 version = "0.6"
 features = ["runtime-tokio-native-tls", "postgres"]
+
+# Async
+# https://crates.io/crates/tokio
+[dependencies.tokio]
+version = "1.28"
+features = ["macros"]

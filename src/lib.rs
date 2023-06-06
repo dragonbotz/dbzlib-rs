@@ -4,5 +4,6 @@
 //! purpose is to ease the backend development of Dragon Bot Z.
 //!
 //! Authors: Lahcène Belhadi <lahcene.belhadi@gmail.com>
+pub mod database;
 pub mod model;
 pub mod util;
