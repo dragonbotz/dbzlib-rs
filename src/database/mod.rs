@@ -19,7 +19,7 @@ impl PgDatabase {
     pub async fn new(url: &str) -> ErrResult<Self> {
         let pool = PgPoolOptions::new().max_connections(5).connect(url).await;
 
-        if let Err(error)= pool {
+        if let Err(error) = pool {
             return Err(Error::DatabaseConnection(error.to_string()));
         }
 
@@ -38,7 +38,7 @@ impl PgDatabase {
 mod PgDatabaseTest {
     use super::*;
 
-    /// To make this test work properly, you must start a service's 
+    /// To make this test work properly, you must start a service's
     /// docker compose
     #[tokio::test]
     async fn ok_on_good_connection_url() {
