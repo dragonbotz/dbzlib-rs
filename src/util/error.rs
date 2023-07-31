@@ -10,7 +10,7 @@ use core::fmt;
 pub type ErrResult<T> = std::result::Result<T, Error>;
 
 /// Not recoverable errors
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Error {
     // Error thrown when the program is unable to connect to a Database
     DatabaseConnection(String),
