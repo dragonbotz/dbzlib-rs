@@ -7,7 +7,7 @@ use sqlx::{postgres::PgPoolOptions, Postgres};
 
 use crate::util::error::{ErrResult, Error};
 
-#[derive(Clone)]
+#[derive(Clone, Copy)]
 pub struct PgDatabase {
     pool: sqlx::Pool<Postgres>,
 }
