@@ -20,6 +20,7 @@ pub enum Exception {
 
     // portal service related exceptions
     RetrievePortal(String),
+    RetrievePortalContent(String),
 }
 
 impl fmt::Display for Exception {
@@ -30,6 +31,7 @@ impl fmt::Display for Exception {
             Exception::RetrieveMultipleCharacters(error) => format!("[Exception][Retrieve Multiple Characters] An error occured while trying to retrieve multiple characters from database: {error}"),
 
             Exception::RetrievePortal(error) => format!("[Exception][Retrieve Portal] An error occured while trying to retrieve a portal from the database: {error}"),
+            Exception::RetrievePortalContent(error) => format!("[Exception][Retrieve Portal Content] An error occured while trying to retrieve a portal's content from the database: {error}"),
         };
 
         write!(f, "{}", content)
