@@ -33,3 +33,11 @@ impl PortalData {
     /// Returns a reference to portal's image url
     pub fn image_url(&self) -> &String { &self.image_url }
 }
+
+impl PortalContent {
+    /// Returns the portal id
+    pub fn id(&self) -> i64 { self.portal }
+
+    /// Returns a reference to the characters contained in the portal
+    pub fn characters(&self) -> &Vec<i64> { &self.characters }
+}
