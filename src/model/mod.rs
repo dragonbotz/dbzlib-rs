@@ -4,3 +4,4 @@
 //!
 //! Authors: Lahcène Belhadi <lahcene.belhadi@gmail.com>
 pub mod character;
+pub mod portal;
