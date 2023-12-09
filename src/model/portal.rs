@@ -14,7 +14,7 @@ pub struct PortalData {
     image_url: String,
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct PortalContent {
     portal: i64,
     characters: Vec<i64>,
