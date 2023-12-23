@@ -161,7 +161,7 @@ dependencies = [
 
 [[package]]
 name = "dbzlib-rs"
-version = "0.5.3"
+version = "0.5.5"
 dependencies = [
  "serde",
  "sqlx",
