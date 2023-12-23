@@ -13,7 +13,7 @@ pub struct Character {
     id: Option<i64>,
     name: String,
     image_url: String,
-    rarity: i8,
+    rarity: i16,
 }
 
 impl Character {
@@ -33,7 +33,7 @@ impl Character {
     }
 
     // Returns the Character's rarity
-    pub fn rarity(self) -> i8 {
+    pub fn rarity(self) -> i16 {
         self.rarity
     }
 }
