@@ -33,8 +33,8 @@ impl Character {
     }
 
     // Returns the Character's rarity
-    pub fn rarity(self) -> i16 {
-        self.rarity
+    pub fn rarity(&self) -> i16 {
+        self.rarity.clone()
     }
 }
 
