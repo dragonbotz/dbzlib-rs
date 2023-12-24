@@ -81,4 +81,13 @@ impl CharacterBuilder {
         self.character.image_url = image_url;
         self
     }
+
+    /// Sets the rarity value of the character instance
+    ///
+    /// # Argument
+    /// * rarity: `i16` - The character rarity
+    pub fn rarity(&mut self, rarity: i16) -> &mut Self {
+        self.character.rarity = rarity;
+        self
+    }
 }
